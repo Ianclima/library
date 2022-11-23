@@ -1,0 +1,67 @@
+html {
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+ }
+
+body{
+    display: grid;
+    background-color: #22c55e;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 3fr 3fr;
+    margin: 0px;
+    height: 100%;
+}   
+
+.maintitle{
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+
+.left{
+    background-color:black;
+    display: flex;
+    justify-content: center;
+    color: white;
+    grid-column: 1/2;
+    grid-row: 1/4;
+}
+
+.cardbox{
+    background-color:#22c55e;
+    grid-column: 2/3;
+    grid-row: 2/4;
+    resize: both;
+    overflow: auto;
+    display: grid;
+    gap: 4px;
+    padding: 4px;
+    grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.book-card{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: large;
+    justify-content: space-around;
+}
+
+
+#submit{
+    background-color: #22c55e;
+    padding: 10px;
+    font-size: large;
+}
+
+
+button{
+    background-color: gray;
+    font-size: large;
+}
